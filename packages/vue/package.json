@@ -1,0 +1,41 @@
+{
+  "name": "@gopowerteam/eslint-config-vue",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [],
+  "license": "MIT",
+  "homepage": "https://github.com/gopowerteam/eslint-config#readme",
+  "bugs": {
+    "url": "https://github.com/gopowerteam/eslint-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gopowerteam/eslint-config.git"
+  },
+  "author": "zhuchentong (https://github.com/zhuchentong)",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.4.0",
+    "vue": "^2.0.0 || ^3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "vue": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@gopowerteam/eslint-config-ts": "workspace:*",
+    "eslint-define-config": "^1.12.0",
+    "eslint-plugin-vue": "^9.8.0",
+    "local-pkg": "^0.4.2"
+  },
+  "devDependencies": {
+    "eslint": "8.29.0"
+  }
+}

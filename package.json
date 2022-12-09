@@ -1,0 +1,17 @@
+{
+  "name": "@gopowerteam/eslint-config",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "author": "zhuchentong",
+  "scripts": {
+    "lint": "eslint . --ext .js,.ts,.json,.json5,.vue,.md --fix",
+    "release": "bumpp package.json packages/*/package.json && pnpm publish -r"
+  },
+  "devDependencies": {
+    "@gopowerteam/eslint-config": "workspace:*",
+    "bumpp": "^8.2.1",
+    "eslint": "^8.29.0",
+    "typescript": "^4.9.4"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "@gopowerteam/eslint-config",
+  "version": "0.0.1",
+  "description": "ESLint Config",
+  "keywords": [
+    "eslint",
+    "config",
+    "preset"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/gopowerteam/eslint-config#readme",
+  "bugs": {
+    "url": "https://github.com/gopowerteam/eslint-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gopowerteam/eslint-config.git"
+  },
+  "author": "zhuchentong (https://github.com/zhuchentong)",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.0.0"
+  },
+  "dependencies": {
+    "@gopowerteam/eslint-config-prettier": "workspace:*",
+    "@gopowerteam/eslint-config-vue": "workspace:*"
+  },
+  "devDependencies": {
+    "eslint": "^8.29.0"
+  }
+}
