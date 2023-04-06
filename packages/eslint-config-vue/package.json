@@ -22,6 +22,7 @@
     "@gopowerteam/eslint-config-basic": "workspace:*",
     "@gopowerteam/eslint-config-ts": "workspace:*",
     "eslint-plugin-vue": "^9.10.0",
+    "eslint-plugin-vue-pug": "^0.6.0",
     "local-pkg": "^0.4.3"
   },
   "devDependencies": {
