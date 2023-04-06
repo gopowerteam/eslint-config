@@ -25,9 +25,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Build Package
-        run: pnpm build
-
       - name: Test Package
         run: pnpm test
 
