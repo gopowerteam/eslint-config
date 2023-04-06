@@ -21,7 +21,11 @@ module.exports = {
       },
     },
   ],
-  extends: ['plugin:vue/vue3-recommended', TS ? '@gopowerteam/eslint-config-ts' : '@gopowerteam/eslint-config-basic'],
+  extends: [
+    'plugin:vue/vue3-recommended',
+    'plugin:vue-pug/vue3-recommended',
+    TS ? '@gopowerteam/eslint-config-ts' : '@gopowerteam/eslint-config-basic',
+  ],
   rules: {
     // eslint-plugin-vue 规则：允许每行有多个属性
     'vue/max-attributes-per-line': 'off',
@@ -43,7 +47,7 @@ module.exports = {
     'vue/component-tags-order': [
       'error',
       {
-        order: ['script', 'template', 'style'],
+        order: ['template', 'style', 'script', 'route'],
       },
     ],
     // eslint-plugin-vue 规则：要求在块级元素之前和内联元素之后始终添加换行符
