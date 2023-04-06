@@ -1,0 +1,30 @@
+{
+  "name": "@gopowerteam/eslint-config-vue",
+  "version": "0.0.2",
+  "description": "",
+  "author": "zhuchentong",
+  "license": "MIT",
+  "keywords": [
+    "eslint-config"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
+  },
+  "dependencies": {
+    "@gopowerteam/eslint-config-basic": "workspace:*",
+    "@gopowerteam/eslint-config-ts": "workspace:*",
+    "eslint-plugin-vue": "^9.10.0",
+    "local-pkg": "^0.4.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.37.0"
+  }
+}
