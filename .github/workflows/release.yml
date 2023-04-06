@@ -60,5 +60,5 @@ jobs:
           curl -X PUT "https://registry-direct.npmmirror.com/@gopowerteam/eslint-config-basic/sync"
           curl -X PUT "https://registry-direct.npmmirror.com/@gopowerteam/eslint-config-prettier/sync"
           curl -X PUT "https://registry-direct.npmmirror.com/@gopowerteam/eslint-config-react/sync"
-          curl -X PUT "https://registry-direct.npmmirror.com/@gopowerteam/eslint-config-typescript/sync"
+          curl -X PUT "https://registry-direct.npmmirror.com/@gopowerteam/eslint-config-ts/sync"
           curl -X PUT "https://registry-direct.npmmirror.com/@gopowerteam/eslint-config-vue/sync"
