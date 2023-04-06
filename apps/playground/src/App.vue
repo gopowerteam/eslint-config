@@ -1,11 +1,12 @@
 <template lang="pug">
 div(:style="{ overflow: 'auto' }")
   a(href="https://vitejs.dev" target="_blank")
-    img(src="/vite.svg" class="logo" alt="Vite logo")
+    img(alt="Vite logo" class="logo" src="/vite.svg")
   a(href="https://vuejs.org/" target="_blank")
-    img(src="./assets/vue.svg" class="logo vue" alt="Vue logo")
+    img(alt="Vue logo" class="logo vue" src="./assets/vue.svg")
   div {{ a }}
-HelloWorld(msg="Vite + Vue")
+HelloWorld(a="1" b="2" msg="Vite + Vue" )
+input(v-model="a" a="2" b="2" style="color:red;")
 </template>
 
 <style scoped>
@@ -24,5 +25,7 @@ HelloWorld(msg="Vite + Vue")
 </style>
 
 <script setup lang="ts">
+import HelloWorld from './components/HelloWorld.vue'
+
 const a = $ref('test')
 </script>

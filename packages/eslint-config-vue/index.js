@@ -58,8 +58,6 @@ module.exports = {
         multiline: 'always',
       },
     ],
-    // eslint-plugin-vue 规则：要求组件名在模板中使用 PascalCase 命名法
-    'vue/component-name-in-template-casing': ['error', 'PascalCase'],
     // eslint-plugin-vue 规则：要求组件选项使用 PascalCase 命名法
     'vue/component-options-name-casing': ['error', 'PascalCase'],
     // eslint-plugin-vue 规则：要求自定义事件名使用 camelCase 命名法
@@ -160,5 +158,27 @@ module.exports = {
     'vue/space-unary-ops': ['error', { words: true, nonwords: false }],
     // eslint-plugin-vue 规则：要求模板字符串中的花括号内部不添加空格
     'vue/template-curly-spacing': 'error',
+    // eslint-plugin-vue 规则：该规则强制使用一致的反勾号、双引号或单引号。
+    'vue/html-quotes': ['error', 'double', { avoidEscape: true }],
+    //
+    'vue/attributes-order': [
+      'error',
+      {
+        order: [
+          'DEFINITION',
+          'LIST_RENDERING',
+          'CONDITIONALS',
+          'RENDER_MODIFIERS',
+          'GLOBAL',
+          ['UNIQUE', 'SLOT'],
+          'TWO_WAY_BINDING',
+          'OTHER_DIRECTIVES',
+          'OTHER_ATTR',
+          'EVENTS',
+          'CONTENT',
+        ],
+        alphabetical: true,
+      },
+    ],
   },
 }
