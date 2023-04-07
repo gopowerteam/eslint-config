@@ -1,12 +1,9 @@
-<template lang="pug">
-div(:style="{ overflow: 'auto' }")
-  a(href="https://vitejs.dev" target="_blank")
-    img(alt="Vite logo" class="logo" src="/vite.svg")
-  a(href="https://vuejs.org/" target="_blank")
-    img(alt="Vue logo" class="logo vue" src="./assets/vue.svg")
-  div {{ a }}
-HelloWorld(a="1" b="2" msg="Vite + Vue" )
-input(v-model="a" a="2" b="2" style="color:red;")
+<template>
+  <div>
+    <div>123</div>
+    <HelloWorld msg="msg"></HelloWorld>
+    <input v-model="a" a="2" b="2" style="color:red;"/>
+  </div>
 </template>
 
 <style scoped>

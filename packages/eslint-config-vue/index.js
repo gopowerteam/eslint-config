@@ -23,12 +23,18 @@ module.exports = {
   ],
   extends: [
     'plugin:vue/vue3-recommended',
-    'plugin:vue-pug/vue3-recommended',
     TS ? '@gopowerteam/eslint-config-ts' : '@gopowerteam/eslint-config-basic',
   ],
   rules: {
-    // eslint-plugin-vue 规则：允许每行有多个属性
-    'vue/max-attributes-per-line': 'off',
+    // eslint-plugin-vue 规则：允许单行3个属性,多行1一个属性
+    'vue/max-attributes-per-line': ['error', {
+      singleline: {
+        max: 3,
+      },
+      multiline: {
+        max: 1,
+      },
+    }],
     // eslint-plugin-vue 规则：允许在模板中使用 v-html 指令渲染 HTML
     'vue/no-v-html': 'off',
     // eslint-plugin-vue 规则：不要求定义 props 的类型
@@ -58,6 +64,9 @@ module.exports = {
         multiline: 'always',
       },
     ],
+    'vue/component-name-in-template-casing': ['error', 'PascalCase', {
+      registeredComponentsOnly: true,
+    }],
     // eslint-plugin-vue 规则：要求组件选项使用 PascalCase 命名法
     'vue/component-options-name-casing': ['error', 'PascalCase'],
     // eslint-plugin-vue 规则：要求自定义事件名使用 camelCase 命名法
@@ -81,8 +90,8 @@ module.exports = {
     'vue/no-restricted-v-bind': ['error', '/^v-/'],
     // eslint-plugin-vue 规则：不允许将 v-bind 指令用于已经有了相应绑定值的元素上
     'vue/no-useless-v-bind': 'error',
-    // eslint-plugin-vue 规则：禁止定义但未使用的 ref
-    'vue/no-unused-refs': 'error',
+    // eslint-plugin-vue 规则：允许定义但未使用的 ref
+    'vue/no-unused-refs': 'off',
     // eslint-plugin-vue 规则：要求在组件的根元素和块级元素之间始终添加一个空行
     'vue/padding-line-between-blocks': ['error', 'always'],
     // eslint-plugin-vue 规则：要求将静态 class 属性从其它属性分开写，以提高可读性
@@ -160,7 +169,7 @@ module.exports = {
     'vue/template-curly-spacing': 'error',
     // eslint-plugin-vue 规则：该规则强制使用一致的反勾号、双引号或单引号。
     'vue/html-quotes': ['error', 'double', { avoidEscape: true }],
-    //
+    //  eslint-plugin-vue 规则：属性排序
     'vue/attributes-order': [
       'error',
       {
@@ -180,5 +189,17 @@ module.exports = {
         alphabetical: true,
       },
     ],
+    // eslint-plugin-vue 规则：控制html代码缩进
+    'vue/html-indent': ['error', 2, {
+      attribute: 1,
+      baseIndent: 1,
+      closeBracket: 0,
+      alignAttributesVertically: true,
+      ignores: [],
+    }],
+    // eslint-plugin-vue 规则：允许使用,运算符
+    'no-sequences': ['off'],
+    // eslint-plugin-vue 规则：reject需要返回Error
+    'prefer-promise-reject-errors': ['error', { allowEmptyReject: true }],
   },
 }

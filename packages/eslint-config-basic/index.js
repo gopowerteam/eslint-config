@@ -485,5 +485,7 @@ module.exports = {
     'yml/quotes': ['error', { prefer: 'single', avoidEscape: false }],
     // eslint规则：禁止空的 yml 文档
     'yml/no-empty-document': 'off',
+    // eslint规则: 不限制disbale注释
+    'no-unlimited-disable': ['off'],
   },
 }
