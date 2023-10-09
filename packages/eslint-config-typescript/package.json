@@ -20,12 +20,13 @@
     "typescript": ">=3.9"
   },
   "dependencies": {
-    "@gopowerteam/eslint-config-basic": "workspace:*",
+    "@gopowerteam/eslint-config-basic": "0.0.10",
     "@typescript-eslint/eslint-plugin": "^6.7.4",
     "@typescript-eslint/parser": "^6.7.4",
     "eslint-plugin-jest": "^27.4.2"
   },
   "devDependencies": {
     "eslint": "^8.51.0"
-  }
+  },
+  "gitHead": "a625e781207c1dc62b73e2f2278f80f49a41bc14"
 }

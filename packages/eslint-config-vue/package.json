@@ -19,12 +19,13 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@gopowerteam/eslint-config-basic": "workspace:*",
-    "@gopowerteam/eslint-config-ts": "workspace:*",
+    "@gopowerteam/eslint-config-basic": "0.0.10",
+    "@gopowerteam/eslint-config-ts": "0.0.10",
     "eslint-plugin-vue": "^9.10.0",
     "local-pkg": "^0.4.3"
   },
   "devDependencies": {
     "eslint": "^8.37.0"
-  }
+  },
+  "gitHead": "a625e781207c1dc62b73e2f2278f80f49a41bc14"
 }
