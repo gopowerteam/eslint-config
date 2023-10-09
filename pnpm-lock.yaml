@@ -60,7 +60,7 @@ importers:
   packages/eslint-config:
     dependencies:
       '@gopowerteam/eslint-config-vue':
-        specifier: workspace:*
+        specifier: ^0.0.11
         version: link:../eslint-config-vue
       '@typescript-eslint/eslint-plugin':
         specifier: ^6.7.4
@@ -180,7 +180,7 @@ importers:
   packages/eslint-config-react:
     dependencies:
       '@gopowerteam/eslint-config-ts':
-        specifier: workspace:*
+        specifier: ^0.0.11
         version: link:../eslint-config-typescript
       eslint-plugin-react:
         specifier: ^7.33.2
@@ -202,7 +202,7 @@ importers:
   packages/eslint-config-typescript:
     dependencies:
       '@gopowerteam/eslint-config-basic':
-        specifier: workspace:*
+        specifier: ^0.0.11
         version: link:../eslint-config-basic
       '@typescript-eslint/eslint-plugin':
         specifier: ^6.7.4
@@ -224,10 +224,10 @@ importers:
   packages/eslint-config-vue:
     dependencies:
       '@gopowerteam/eslint-config-basic':
-        specifier: workspace:*
+        specifier: ^0.0.11
         version: link:../eslint-config-basic
       '@gopowerteam/eslint-config-ts':
-        specifier: workspace:*
+        specifier: ^0.0.11
         version: link:../eslint-config-typescript
       eslint-plugin-vue:
         specifier: ^9.10.0
