@@ -1,8 +1,14 @@
 <template>
+  <div>1111</div>
   <div>
     <div>123</div>
-    <HelloWorld msg="msg"></HelloWorld>
-    <input v-model="a" a="2" b="2" style="color:red;"/>
+    <HelloWorld msg="msg" />
+    <input
+      v-model="a"
+      a="2"
+      b="2"
+      style="color:red;"
+    >
   </div>
 </template>
 

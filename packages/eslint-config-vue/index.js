@@ -1,7 +1,9 @@
 const { isPackageExists } = require('local-pkg')
 
 const TS = isPackageExists('typescript')
-if (!TS) console.warn('[@gopowerteam/eslint-config] TypeScript is not installed, fallback to JS only.')
+if (!TS) {
+  console.warn('[@gopowerteam/eslint-config] TypeScript is not installed, fallback to JS only.')
+}
 module.exports = {
   overrides: [
     {
@@ -35,6 +37,8 @@ module.exports = {
         max: 1,
       },
     }],
+    // eslint-plugin-vue 规则：允许在一个文件中定义多个组件
+    'vue/one-component-per-file': 'off',
     // eslint-plugin-vue 规则：允许在模板中使用 v-html 指令渲染 HTML
     'vue/no-v-html': 'off',
     // eslint-plugin-vue 规则：不要求定义 props 的类型

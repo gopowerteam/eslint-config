@@ -243,7 +243,7 @@ module.exports = {
     'import/newline-after-import': ['error', { count: 1 }], // 要求 import 语句后面有一个空白行
     // 常见规则
     'semi': ['error', 'never'], // 禁止除`;`以外的结尾符号，确保代码的一致性
-    'curly': ['error', 'multi-or-nest', 'consistent'], // 强制使用大括号限定代码块范围，即使只有一行，以提高代码的可读性
+    'curly': ['error', 'all'], // 强制使用大括号限定代码块范围，即使只有一行，以提高代码的可读性
     'quotes': ['error', 'single'], // 强制使用单引号，一致性是许多团队开发中最重要的方面之一
     'quote-props': ['error', 'consistent-as-needed'], // 强制对象属性使用一致的引号风格，以便在不同的
     // eslint规则：防止未使用的导入
