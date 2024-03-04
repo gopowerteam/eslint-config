@@ -1,6 +1,6 @@
 {
   "name": "@gopowerteam/eslint-config-vue",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "",
   "author": "zhuchentong",
   "license": "MIT",
@@ -19,8 +19,8 @@
     "eslint": ">=8.0.0"
   },
   "dependencies": {
-    "@gopowerteam/eslint-config-basic": "0.0.12",
-    "@gopowerteam/eslint-config-ts": "0.0.12",
+    "@gopowerteam/eslint-config-basic": "^0.0.13",
+    "@gopowerteam/eslint-config-ts": "^0.0.13",
     "eslint-plugin-vue": "9.10.0",
     "local-pkg": "0.4.3"
   },

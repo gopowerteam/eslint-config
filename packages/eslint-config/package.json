@@ -1,6 +1,6 @@
 {
   "name": "@gopowerteam/eslint-config",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "ESLint Config",
   "author": "zhuchentong",
   "license": "MIT",
@@ -21,7 +21,7 @@
     "eslint": ">=8.0.0"
   },
   "dependencies": {
-    "@gopowerteam/eslint-config-vue": "0.0.12",
+    "@gopowerteam/eslint-config-vue": "^0.0.13",
     "@typescript-eslint/eslint-plugin": "6.7.4",
     "@typescript-eslint/parser": "6.7.4",
     "eslint-plugin-eslint-comments": "3.2.0",
