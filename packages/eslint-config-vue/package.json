@@ -16,16 +16,16 @@
     "registry": "https://registry.npmjs.org"
   },
   "peerDependencies": {
-    "eslint": ">=7.4.0"
+    "eslint": ">=8.0.0"
   },
   "dependencies": {
-    "@gopowerteam/eslint-config-basic": "^0.0.12",
-    "@gopowerteam/eslint-config-ts": "^0.0.12",
-    "eslint-plugin-vue": "^9.10.0",
-    "local-pkg": "^0.4.3"
+    "@gopowerteam/eslint-config-basic": "0.0.12",
+    "@gopowerteam/eslint-config-ts": "0.0.12",
+    "eslint-plugin-vue": "9.10.0",
+    "local-pkg": "0.4.3"
   },
   "devDependencies": {
-    "eslint": "^8.37.0"
+    "eslint": "8.51.0"
   },
   "gitHead": "752b06a1b1bb42661a01fff015c728078790e57e"
 }
